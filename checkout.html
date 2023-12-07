@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="" type="image/jpg">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4285f4"/>
+    <meta name="description" content="PayNow: Tu Página de confianza!">
+    <title>PayNow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #checkout-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html"><img src="" alt="Logo de PayNow"></a>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <main id="checkout-form">
+
+        <form method="post">
+            <fieldset>
+                <legend>Datos del Cliente</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dirección de Envío</legend>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+
+                <label for="codigo_postal">Código Postal:</label>
+                <input type="text" id="codigo_postal" name="codigo_postal" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Productos</legend>
+                <label for="producto">Producto:</label>
+                <select id="producto" name="producto" required>
+                    <option value="hamburguesa">Hamburguesa - $8.99</option>
+                    <option value="pizza">Pizza - $10.99</option>
+                    <option value="sushi">Sushi - $12.99</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Método de Pago</legend>
+                <label for="metodo_pago">Selecciona el método de pago:</label>
+                <select id="metodo_pago" name="metodo_pago" required>
+                    <option value="tarjeta_credito">Tarjeta de Crédito</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+            </fieldset>
+
+            <button type="submit" onclick="realizarPago();">Realizar Pago</button>
+        </form>
+    </main>
+
+    <script>
+        function realizarPago() {
+            alert('Pago realizado exitosamente. Esta es solo una simulación.');
+        }
+    </script>
+
+<footer>
+    <small>PayNow - Tu mejor opción</small>
+</footer>
+
+</body>
+</html>
