@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYNOW</title>
+</head>
+<body>
+    <h2>Solicitud de Mantenimiento y actualizacion de hardware</h2>
+<h3>porfavor ingrese la informacion requerida...</h3>
+<form id="solicitudForm" onsubmit="enviarSolicitud(event)">
+  <label for="nombres">Nombres:</label><br>
+  <input type="text" id="nombres" name="nombres"><br><br>
+
+  <label for="apellidos">Apellidos:</label><br>
+  <input type="text" id="apellidos" name="apellidos"><br><br>
+
+  <label for="dui">Número de DUI:</label><br>
+  <input type="text" id="dui" name="dui"><br><br>
+
+  <label for="direccion">Dirección:</label><br>
+  <input type="text" id="direccion" name="direccion"><br><br>
+
+  <label for="departamento">Departamento:</label><br>
+  <input type="text" id="departamento" name="departamento"><br><br>
+
+  <label for="telefono">Teléfono:</label><br>
+  <input type="text" id="telefono" name="telefono"><br><br>
+
+  <label for="correo electronico">Correo Electronico:</label><br>
+  <input type="text" id="correo electronico" name="correo electronico"><br><br>
+
+  <label for="horario">Mejor horario para comunicarse:</label><br><br>
+  <select id="horario" name="horario">
+    <option value="AM">A.M.</option>
+    <option value="PM">P.M.</option>
+  </select><br><br>
+
+  <label for="genero">Género:</label><br><br>
+  <select id="genero" name="genero">
+    <option value="masculino">Masculino</option>
+    <option value="femenino">Femenino</option>
+    <option value="otros">Otros</option>
+  </select><br><br>
+
+  <label for="Comentario">Escriba una descripcion del problema para nuestro especialista...</label><br><br>
+  <textarea name="Comentario" id="Comentario" cols="30" rows="10"></textarea><br><br><br><br>
+
+  <input type="submit" value="Enviar Solicitud de Mantenimiento" onclick="enviarSolicitud()">
+</form>
+
+<div id="mensaje" style="display: none;">
+    <h2>Tu solicitud ha sido enviada con éxito</h2>
+    <p>Uno de nuestros representantes se comunicará contigo en las siguientes 24-48 horas. ¡Gracias por preferirnos!</p>
+  </div>
+
+  </script>
+</body>
+</html>
