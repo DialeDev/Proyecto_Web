@@ -31,11 +31,12 @@
 <body>
     <nav class="menu">
         <a href="index.html"><img src="/img/Lgw_PayNow.png" alt="Logo de PayNow" width="150px"></a>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Acerca de</a></li>
-        </ul>
+        <div class="redirecciones">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de</a>  
+        </div>
     </nav>
+    <main class="pago">
     <h2>Pago del servicio de Cable Color</h2>
 <h3>porfavor ingrese la informacion requerida...</h3>
 <form id="solicitudForm" onsubmit="enviarSolicitud(event)">
@@ -49,7 +50,7 @@
   <input type="text" id="dui" name="dui"><br><br>
 
   <label for="Numero de cliente">Numero de cliente:</label><br>
-  <input type="Numero de cliente" id="Numero de cliente" name="Numero de cliente"><br><br>
+  <input type="number" id="Numero de cliente" name="Numero de cliente"><br><br>
 
   <label for="telefono">Teléfono:</label><br>
   <input type="text" id="telefono" name="telefono"><br><br>
@@ -100,5 +101,9 @@
   
 
   </script>
+  </main>
+  <footer>
+    <small>PayNow - Tu mejor opción</small>
+</footer>
 </body>
 </html>

@@ -86,3 +86,131 @@ article {
 .delivery article {
     padding: 20px;
 }
+
+.Ser_M_Pagos{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+.Ser_M_Pagos img {
+    width: 200px;
+    object-fit: contain;
+}
+
+.servicio {
+    display: flex;
+    justify-content: space-between;
+    color:#2d63bf;
+    border:#2d63bf 2px solid;
+    border-radius: 10px;
+}
+
+.servicio button {
+    color:#2d63bf;
+    background-color:#deedfb;
+    border:#2d63bf 2px solid;
+    border-radius: 10px;
+}
+
+.serv_op {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+.opcion {
+    display: flex;
+    flex-direction: column;
+    color:#2d63bf;
+    border:#2d63bf 2px solid;
+    border-radius: 10px;
+}
+
+.opcion button {
+    color:#2d63bf;
+    background-color:#deedfb;
+    border:#2d63bf 2px solid;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.soli{
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.soli label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.soli input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.soli button, .soli input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.soli button:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    width: 600px;
+    padding: 1rem;
+} 
+
+.soli, .soli select, .soli input[type="submit"], textarea{
+    font-size: 1.2rem;
+}
+
+.pago {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.pago label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.pago input[type="text"], input[type="number"], select, input[type='password'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+.pago button, .pago input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.pago button:hover {
+    background-color: #45a049;
+}
+
+.pago, .pago select, .pago input[type="submit"], .pago input{
+    font-size: 1.2rem;
+}
