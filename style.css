@@ -41,12 +41,13 @@ small {
     text-align: center;
 }
 
-.inicio {
+.inicio, .delivery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap:20px;
     height: 70vh;
     padding: 20px;
+    margin: 20px 0; 
 }
 
 article {
@@ -61,6 +62,10 @@ article {
     cursor: pointer;
 }
 
-.inicio img {
+.inicio img, .delivery img{
     width: 250px;
+}
+
+.delivery article {
+    padding: 20px;
 }
