@@ -13,32 +13,32 @@
 <body>
     <nav class="menu">
         <a href="index.html"><img src="/img/Lgw_PayNow.png" alt="Logo de PayNow" width="150px"></a>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">Acerca de</a></li>
-        </ul>
+        <div class="redirecciones">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de</a>  
+        </div>
     </nav>
-    <main>
-        <article>
-            <footer>
+    <main class="inicio">
+        <article onclick="redirectToPage('/sevicios de mantenimientos.html')">
+            <header>
                 <h2>Servicios de mantenimiento</h2>
-            </footer>
-            <a href="/sevicios de mantenimientos.html">
+            </header>
+            <a href="">
                 <img src="/img/servicios-de-reparacion.png" alt="Foto de los servicios de mantenimiento">
             </a>
         </article>
         <article>
-            <footer>
+            <header>
                 <h2>Pago de servicios públicos</h2>
-            </footer>
+            </header>
             <a href="Pagos de servicios publicos.html">
                 <img src="/img/metodo-de-pago.png" alt="Foto de los servicios de públicos">
             </a>
         </article>
         <article>
-            <footer>
+            <header>
                 <h2>Servicio de Delivery</h2>
-            </footer>
+            </header>
             <a href="/delivery_service.html">
                 <img src="/img/delivery-de-pizza.png" alt="Foto de los servicios de Delivery">
             </a>
@@ -47,5 +47,11 @@
     <footer>
         <small>PayNow - Tu mejor opción</small>
     </footer>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
 </body>
 </html>
