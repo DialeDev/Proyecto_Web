@@ -66,6 +66,23 @@ article {
     width: 250px;
 }
 
+.servicio {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .opcion {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
 .delivery article {
     padding: 20px;
 }

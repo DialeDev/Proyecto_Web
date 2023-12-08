@@ -20,7 +20,7 @@
 </nav>
     <h2>Solicitud de Intalacion de Sistema electrico</h2>
 <h3>porfavor ingrese la informacion requerida...</h3>
-<form id="solicitudForm" onsubmit="enviarSolicitud(event)">
+<form id="solicitudForm">
   <label for="nombres">Nombres:</label><br>
   <input type="text" id="nombres" name="nombres"><br><br>
 
@@ -58,14 +58,8 @@
   <label for="Comentario">Escriba una descripcion del problema para nuestro especialista...</label><br><br>
   <textarea name="Comentario" id="Comentario" cols="30" rows="10"></textarea><br><br><br><br>
 
-  <input type="submit" value="Enviar Solicitud de Mantenimiento" onclick="enviarSolicitud()">
+  <input type="submit" value="Enviar Solicitud de Mantenimiento" >
 </form>
 
-<div id="mensaje" style="display: none;">
-    <h2>Tu solicitud ha sido enviada con éxito</h2>
-    <p>Uno de nuestros representantes se comunicará contigo en las siguientes 24-48 horas. ¡Gracias por preferirnos!</p>
-  </div>
-
-  </script>
 </body>
 </html>
